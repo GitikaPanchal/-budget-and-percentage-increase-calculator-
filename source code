@@ -1,0 +1,58 @@
+#budget and percentage increase calculator 
+
+print("Calculate your monthly cost")
+print()
+fb=float(input("Enter estimated monthly budget "))
+mc=float(input("Moving Cost "))
+rent=float(input("Enter Monthly Rent "))
+ptl=float(input("Monthly Cost For Fuel "))
+
+tc=mc+rent+ptl
+
+#shows you if you're over budget or not
+print(f"Your budget is {fb} your spending is {tc}")
+print()
+if tc > fb:
+    print("You're over budget!")
+else:
+    print("Congrats you're in your budget")
+
+
+yc1=fb*12
+yc2=rent*12
+yc3=ptl*12
+print()
+yfb=print(f"Estimated Yearly Budget {yc1}")
+yrent=print(f"Estimated Yearly Rent Cost {yc2}")
+yptl=print(f"Estimated Yearly Fuel Cost {yc3}")
+
+print()
+
+#rent x% increase every year 
+#fuel y% increase every year
+
+rent1 = rent
+pinc = float(input("Enter percentage increase rent: "))
+
+ppinc = pinc/100
+
+
+inc = rent1 * ppinc
+new = rent1 + inc
+print(f"Your new value after inflation is {new}")
+
+
+
+fuel = ptl
+pincf = float(input("Enter percentage increase for fuel: "))
+
+ppincf = pincf/100
+
+incf = fuel * ppincf
+newf = fuel + incf
+print(f"Your new value after inflation is {newf}")
+
+
+
+
+
